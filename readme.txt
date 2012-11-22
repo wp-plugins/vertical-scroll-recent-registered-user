@@ -3,10 +3,12 @@ Contributors: www.gopiplus.com, gopiplus
 Donate link: http://www.gopiplus.com/work/2010/07/18/vertical-scroll-recent-registered-user/
 Author URI: http://www.gopiplus.com/work/
 Plugin URI: http://www.gopiplus.com/work/2010/07/18/vertical-scroll-recent-registered-user/
-Tags: vertical, scroll, recent, registered, user, plugin, widget
+Tags: vertical, scroll, recent, registered, plugin, widget
 Requires at least: 3.0
-Tested up to: 3.4.1
-Stable tag: 6.0
+Tested up to: 3.5
+Stable tag: 6.1
+License: GPLv2 or later
+License URI: http://www.gnu.org/licenses/gpl-2.0.html
 	
 Vertical scroll recent registered user wordpress plugin create the scroller in the widget with recently registered user avatar, username and date.
 
@@ -54,25 +56,29 @@ Q5. What is "Enter max number of user to display" this in widget management area
 
 == Upgrade Notice ==
 
+= 6.1 =
+
+Tested up to 3.5
+
 = 6.0 =
 
-New demo link, www.gopiplus.com
+New demo link, http://www.gopiplus.com
 
 = 5.0 =
 
-Tested upto 3.4
+Tested up to 3.4
 
 = 4.0 =
 
-Tested upto 3.3
+Tested up to 3.3
 
 = 3.0 =
 
-Tested upto 3.1.3
+Tested up to 3.1.3
 
 = 2.0 =
 
-Tested upto 3.0
+Tested up to 3.0
 
 = 1.0 =
 
@@ -80,25 +86,29 @@ First version.
 
 == Changelog ==
 
+= 6.1 =
+
+Tested up to 3.5
+
 = 6.0 =
 
-New demo link, www.gopiplus.com
+New demo link, http://www.gopiplus.com
 
 = 5.0 =
 
-Tested upto 3.4
+Tested up to 3.4
 
 = 4.0 =
 
-Tested upto 3.3
+Tested up to 3.3
 
 = 3.0 =
 
-Tested upto 3.1.3
+Tested up to 3.1.3
 
 = 2.0 =
 
-Tested upto 3.0
+Tested up to 3.0
 
 = 1.0 =
 

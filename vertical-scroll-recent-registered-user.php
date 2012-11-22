@@ -3,11 +3,13 @@
 /*
 Plugin Name: Vertical scroll recent registered user
 Plugin URI: http://www.gopiplus.com/work/2010/07/18/vertical-scroll-recent-registered-user/
-Description: This plug-in will vertically scroll the recent registered user with avatar & date in sidebar..
+Description: Vertical scroll recent registered user wordpress plugin create the scroller in the widget with recently registered user avatar, username and date.
 Author: Gopi.R
 Author URI: http://www.gopiplus.com/work/2010/07/18/vertical-scroll-recent-registered-user/
-Version: 6.0
+Version: 6.1
 Tags: Vertical, scroll, recent, registered, user
+License: GPLv2 or later
+License URI: http://www.gnu.org/licenses/gpl-2.0.html
 */
 
 function vsrru() 
