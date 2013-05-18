@@ -6,7 +6,7 @@ Plugin URI: http://www.gopiplus.com/work/2010/07/18/vertical-scroll-recent-regis
 Description: Vertical scroll recent registered user wordpress plugin create the scroller in the widget with recently registered user avatar, username and date.
 Author: Gopi.R
 Author URI: http://www.gopiplus.com/work/2010/07/18/vertical-scroll-recent-registered-user/
-Version: 6.1
+Version: 7.0
 Tags: Vertical, scroll, recent, registered, user
 License: GPLv2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
@@ -15,10 +15,8 @@ License URI: http://www.gnu.org/licenses/gpl-2.0.html
 function vsrru() 
 {
 	global $wpdb;
-	
 	$num_user = get_option('vsrru_select_num_user');
 	$dis_num_user = get_option('vsrru_dis_num_user');
-
 	if(!is_numeric($num_user))
 	{
 		$num_user = 5;
@@ -104,7 +102,6 @@ function vsrru()
 			$vsrru_count = $vsrru_count;
 			$vsrru_height = ($vsrru_count*42);
 		}
-
 		?>	
 		<div style="padding-top:8px;padding-bottom:8px;">
 			<div style="text-align:left;vertical-align:middle;text-decoration: none;overflow: hidden; position: relative; margin-left: 3px; height: <?php echo $vsrru_height; ?>px;" id="vsrruHolder">
@@ -207,7 +204,6 @@ function vsrru_widget($args)
 	echo $after_title;
 	vsrru();
 	echo $after_widget;
-
 }
 
 function vsrru_init()
