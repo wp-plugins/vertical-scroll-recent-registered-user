@@ -1,12 +1,11 @@
 <?php
-
 /*
 Plugin Name: Vertical scroll recent registered user
 Plugin URI: http://www.gopiplus.com/work/2010/07/18/vertical-scroll-recent-registered-user/
 Description: Vertical scroll recent registered user wordpress plugin create the scroller in the widget with recently registered user avatar, username and date.
 Author: Gopi.R
 Author URI: http://www.gopiplus.com/work/2010/07/18/vertical-scroll-recent-registered-user/
-Version: 7.0
+Version: 7.1
 Tags: Vertical, scroll, recent, registered, user
 License: GPLv2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
@@ -114,14 +113,14 @@ function vsrru()
 		var objVSRRU	= '';
 		var vsrru_scrollPos 	= '';
 		var vsrru_numScrolls	= '';
-		var vsrru_heightOfElm = '42'; // Height of each element (px)
+		var vsrru_heightOfElm = '42';
 		var vsrru_numberOfElm = '<?php echo $vsrru_count; ?>';
 		var vsrru_scrollOn 	= 'true';
 		function createVSRRUScroll() 
 		{
 			<?php echo $vsrru_x; ?>
 			objVSRRU	= document.getElementById('vsrruHolder');
-			objVSRRU.style.height = (vsrru_numberOfElm * vsrru_heightOfElm) + 'px'; // Set height of DIV
+			objVSRRU.style.height = (vsrru_numberOfElm * vsrru_heightOfElm) + 'px';
 			vsrruContent();
 		}
 		</script>
@@ -155,7 +154,7 @@ function vsrru_control()
 	$vsrru_select_num_user = get_option('vsrru_select_num_user');
 	$vsrru_dis_num_user = get_option('vsrru_dis_num_user');
 	
-	if (@$_POST['vsrru_submit']) 
+	if (isset($_POST['vsrru_submit'])) 
 	{
 		$vsrru_title = stripslashes($_POST['vsrru_title']);
 		$vsrru_dis_date = stripslashes($_POST['vsrru_dis_date']);
@@ -172,27 +171,31 @@ function vsrru_control()
 		update_option('vsrru_dis_num_user', $vsrru_dis_num_user );
 	}
 	
-	echo '<p>Title:<br><input  style="width: 200px;" type="text" value="';
+	echo '<p>'.__('Title:' , 'vertical-scroll-recent-registered-user').'<br><input  style="width: 200px;" type="text" value="';
 	echo $vsrru_title . '" name="vsrru_title" id="vsrru_title" /></p>';
 	
-	echo '<p>Display date:<br><input  style="width: 100px;" type="text" value="';
+	echo '<p>'.__('Display date:' , 'vertical-scroll-recent-registered-user').'<br><input  style="width: 100px;" type="text" value="';
 	echo $vsrru_dis_date . '" name="vsrru_dis_date" id="vsrru_dis_date" /> (YES/NO)</p>';
 	
-	echo '<p>Display image border:<br><input  style="width: 100px;" type="text" value="';
+	echo '<p>'.__('Display image border:' , 'vertical-scroll-recent-registered-user').'<br><input  style="width: 100px;" type="text" value="';
 	echo $vsrru_dis_border . '" name="vsrru_dis_border" id="vsrru_dis_border" /> (YES/NO)</p>';
 	
-	echo '<p>Display image:<br><input  style="width: 100px;" type="text" value="';
+	echo '<p>'.__('Display image:' , 'vertical-scroll-recent-registered-user').'<br><input  style="width: 100px;" type="text" value="';
 	echo $vsrru_dis_image . '" name="vsrru_dis_image" id="vsrru_dis_image" /> (YES/NO)</p>';
 	
-	echo '<p>Display number of user at the same time in scroll:<br><input  style="width: 100px;" type="text" value="';
+	echo '<p>'.__('Display number of user at the same time in scroll:' , 'vertical-scroll-recent-registered-user').'<br><input  style="width: 100px;" type="text" value="';
 	echo $vsrru_dis_num_user . '" name="vsrru_dis_num_user" id="vsrru_dis_num_user" /></p>';
 	
-	echo '<p>Enter max number of user to display:<br><input  style="width: 100px;" type="text" value="';
+	echo '<p>'.__('Enter max number of user to display:' , 'vertical-scroll-recent-registered-user').'<br><input  style="width: 100px;" type="text" value="';
 	echo $vsrru_select_num_user . '" name="vsrru_select_num_user" id="vsrru_select_num_user" /></p>';
 	
 	echo '<input type="hidden" id="vsrru_submit" name="vsrru_submit" value="1" />';
 	
-	echo '<a target="_blank" href="http://www.gopiplus.com/work/2010/07/18/vertical-scroll-recent-registered-user/">Check official</a> website for more info '; 
+	echo '<p>';
+	_e('Check official website for more information', 'vertical-scroll-recent-registered-user');
+	?> 
+	<a target="_blank" href="http://www.gopiplus.com/work/2010/07/18/vertical-scroll-recent-registered-user/">
+	<?php _e('click here', 'vertical-scroll-recent-registered-user'); ?></a></p><?php
 
 }
 
@@ -210,12 +213,14 @@ function vsrru_init()
 {
 	if(function_exists('wp_register_sidebar_widget')) 
 	{
-		wp_register_sidebar_widget('vertical-scroll-recent-registered-user', 'Vertical scroll recent registered user', 'vsrru_widget');
+		wp_register_sidebar_widget('vertical-scroll-recent-registered-user', 
+				__('Vertical scroll recent registered user' , 'vertical-scroll-recent-registered-user'), 'vsrru_widget');
 	}
 	
 	if(function_exists('wp_register_widget_control')) 
 	{
-		wp_register_widget_control('vertical-scroll-recent-registered-user', 'Vertical scroll recent registered user', 'vsrru_control');
+		wp_register_widget_control('vertical-scroll-recent-registered-user', 
+				__('Vertical scroll recent registered user' , 'vertical-scroll-recent-registered-user'), 'vsrru_control');
 	} 
 }
 
@@ -229,6 +234,12 @@ function vsrru_deactivation()
 	delete_option('vsrru_select_num_user');
 }
 
+function vsrru_textdomain() 
+{
+	  load_plugin_textdomain( 'vertical-scroll-recent-registered-user', false, dirname( plugin_basename( __FILE__ ) ) . '/languages/' );
+}
+
+add_action('plugins_loaded', 'vsrru_textdomain');
 add_action("plugins_loaded", "vsrru_init");
 register_activation_hook(__FILE__, 'vsrru_install');
 register_deactivation_hook(__FILE__, 'vsrru_deactivation');

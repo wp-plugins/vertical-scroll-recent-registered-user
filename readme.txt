@@ -5,8 +5,8 @@ Author URI: http://www.gopiplus.com/work/
 Plugin URI: http://www.gopiplus.com/work/2010/07/18/vertical-scroll-recent-registered-user/
 Tags: vertical, scroll, recent, registered, plugin, widget
 Requires at least: 3.4
-Tested up to: 3.6
-Stable tag: 7.0
+Tested up to: 3.8
+Stable tag: 7.1
 License: GPLv2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
 	
@@ -50,13 +50,20 @@ Q5. What is "Enter max number of user to display" this in widget management area
 
 == Screenshots ==
 
-1. http://www.gopiplus.com/work/2010/07/18/vertical-scroll-recent-registered-user/
+1. Front Screen. http://www.gopiplus.com/work/2010/07/18/vertical-scroll-recent-registered-user/
 
-2. http://www.gopiplus.com/work/2010/07/18/vertical-scroll-recent-registered-user/
+2. Admin Screen. http://www.gopiplus.com/work/2010/07/18/vertical-scroll-recent-registered-user/
 
 == Upgrade Notice ==
 
+= 7.1 =
+
+1. Tested up to 3.8
+2. Now this plugin supports localization (or internationalization). i.e. option to translate into other languages. 
+Plugin *.po file (vertical-scroll-recent-registered-user.po) available in the languages folder.
+
 = 7.0 =
+
 Tested up to 3.6
 
 = 6.1 =
@@ -89,7 +96,14 @@ First version.
 
 == Changelog ==
 
+= 7.1 =
+
+1. Tested up to 3.8
+2. Now this plugin supports localization (or internationalization). i.e. option to translate into other languages. 
+Plugin *.po file (vertical-scroll-recent-registered-user.po) available in the languages folder.
+
 = 7.0 =
+
 Tested up to 3.6
 
 = 6.1 =
