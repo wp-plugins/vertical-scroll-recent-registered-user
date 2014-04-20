@@ -1,8 +1,8 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: Vertical scroll recent registered user\n"
-"POT-Creation-Date: 2014-02-05 22:07+0800\n"
-"PO-Revision-Date: 2014-02-05 22:07+0800\n"
+"POT-Creation-Date: 2014-04-20 01:13+0800\n"
+"PO-Revision-Date: 2014-04-20 01:13+0800\n"
 "Last-Translator: \n"
 "Language-Team: www.gopiplus.com <www.gopiplus.com>\n"
 "MIME-Version: 1.0\n"
@@ -13,39 +13,39 @@ msgstr ""
 "X-Poedit-Basepath: .\n"
 "X-Poedit-SearchPath-0: ..\n"
 
-#: ../vertical-scroll-recent-registered-user.php:174
+#: ../vertical-scroll-recent-registered-user.php:175
 msgid "Title:"
 msgstr ""
 
-#: ../vertical-scroll-recent-registered-user.php:177
+#: ../vertical-scroll-recent-registered-user.php:178
 msgid "Display date:"
 msgstr ""
 
-#: ../vertical-scroll-recent-registered-user.php:180
+#: ../vertical-scroll-recent-registered-user.php:181
 msgid "Display image border:"
 msgstr ""
 
-#: ../vertical-scroll-recent-registered-user.php:183
+#: ../vertical-scroll-recent-registered-user.php:184
 msgid "Display image:"
 msgstr ""
 
-#: ../vertical-scroll-recent-registered-user.php:186
+#: ../vertical-scroll-recent-registered-user.php:187
 msgid "Display number of user at the same time in scroll:"
 msgstr ""
 
-#: ../vertical-scroll-recent-registered-user.php:189
+#: ../vertical-scroll-recent-registered-user.php:190
 msgid "Enter max number of user to display:"
 msgstr ""
 
-#: ../vertical-scroll-recent-registered-user.php:195
+#: ../vertical-scroll-recent-registered-user.php:196
 msgid "Check official website for more information"
 msgstr ""
 
-#: ../vertical-scroll-recent-registered-user.php:198
+#: ../vertical-scroll-recent-registered-user.php:199
 msgid "click here"
 msgstr ""
 
-#: ../vertical-scroll-recent-registered-user.php:217
-#: ../vertical-scroll-recent-registered-user.php:223
+#: ../vertical-scroll-recent-registered-user.php:218
+#: ../vertical-scroll-recent-registered-user.php:224
 msgid "Vertical scroll recent registered user"
 msgstr ""
