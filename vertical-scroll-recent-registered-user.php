@@ -6,7 +6,7 @@ Description: Vertical scroll recent registered user wordpress plugin create the 
 Author: Gopi Ramasamy
 Author URI: http://www.gopiplus.com/work/2010/07/18/vertical-scroll-recent-registered-user/
 Donate link: http://www.gopiplus.com/work/2010/07/18/vertical-scroll-recent-registered-user/
-Version: 7.2
+Version: 7.3
 Tags: Vertical, scroll, recent, registered, user
 License: GPLv2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
@@ -15,6 +15,14 @@ License URI: http://www.gnu.org/licenses/gpl-2.0.html
 function vsrru() 
 {
 	global $wpdb;
+	global $blog_id;
+	$blog_prefix = $blog_id."_";
+		
+	if($blog_id == 1) 
+	{
+		$blog_prefix="";
+	}
+		
 	$num_user = get_option('vsrru_select_num_user');
 	$dis_num_user = get_option('vsrru_dis_num_user');
 	if(!is_numeric($num_user))
@@ -27,7 +35,7 @@ function vsrru()
 	}
 	$vsrruhtml = "";
 	$vsrru_x = "";
-	$vsrru_data = $wpdb->get_results("select ID,display_name,user_registered from ". $wpdb->prefix . "users ORDER BY user_registered desc limit 0, $num_user");
+	$vsrru_data = $wpdb->get_results("select ID,display_name,user_registered from ". $wpdb->base_prefix.$blog_prefix . "users ORDER BY user_registered desc limit 0, $num_user");
 	?>
     <?php if(get_option('vsrru_dis_border')=="YES") { ?>
     <style type="text/css">
@@ -197,7 +205,6 @@ function vsrru_control()
 	?> 
 	<a target="_blank" href="http://www.gopiplus.com/work/2010/07/18/vertical-scroll-recent-registered-user/">
 	<?php _e('click here', 'vertical-scroll-recent-registered-user'); ?></a></p><?php
-
 }
 
 function vsrru_widget($args) 
