@@ -108,7 +108,7 @@ First version.
 = 7.3 =
 
 1. Tested up to 4.0
-2. Support multisite blogs.
+2. Support multisite blogs. 
 
 = 7.2 =
 
