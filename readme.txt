@@ -5,8 +5,8 @@ Author URI: http://www.gopiplus.com/work/2010/07/18/vertical-scroll-recent-regis
 Plugin URI: http://www.gopiplus.com/work/2010/07/18/vertical-scroll-recent-registered-user/
 Tags: vertical, scroll, recent, registered, plugin, widget
 Requires at least: 3.4
-Tested up to: 4.1
-Stable tag: 7.4
+Tested up to: 4.2.2
+Stable tag: 7.5
 License: GPLv2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
 	
@@ -55,6 +55,10 @@ Q5. What is "Enter max number of user to display" this in widget management area
 2. Admin Screen. http://www.gopiplus.com/work/2010/07/18/vertical-scroll-recent-registered-user/
 
 == Upgrade Notice ==
+
+= 7.5 =
+
+1. Tested up to 4.2.2
 
 = 7.4 =
 
@@ -108,6 +112,10 @@ Tested up to 3.0
 First version.
 
 == Changelog ==
+
+= 7.5 =
+
+1. Tested up to 4.2.2
 
 = 7.4 =
 
