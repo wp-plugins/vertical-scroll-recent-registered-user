@@ -5,8 +5,8 @@ Author URI: http://www.gopiplus.com/work/2010/07/18/vertical-scroll-recent-regis
 Plugin URI: http://www.gopiplus.com/work/2010/07/18/vertical-scroll-recent-registered-user/
 Tags: vertical, scroll, recent, registered, plugin, widget
 Requires at least: 3.4
-Tested up to: 4.3
-Stable tag: 7.6
+Tested up to: 4.3.1
+Stable tag: 7.7
 License: GPLv2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
 	
@@ -29,6 +29,11 @@ Vertical scroll recent registered user wordpress plugin create the scroller in t
 *   Have option to display/hide avatar.
 *   Have option to display/hide registered date.
 *   Have option to display number of recent register user.
+
+= Translators =
+
+* English (en_EN) - [Gopi Ramasamy](http://www.gopiplus.com/)
+* Polish (pl_PL) - [Abdul Sattar](https://www.couponmachine.in/)
 	
 == Installation ==
 
@@ -55,6 +60,11 @@ Q5. What is "Enter max number of user to display" this in widget management area
 2. Admin Screen. http://www.gopiplus.com/work/2010/07/18/vertical-scroll-recent-registered-user/
 
 == Upgrade Notice ==
+
+= 7.7 =
+
+1. Tested up to 4.3.1
+2. Text Domain slug has been added for Language Packs.
 
 = 7.6 =
 
@@ -116,6 +126,11 @@ Tested up to 3.0
 First version.
 
 == Changelog ==
+
+= 7.7 =
+
+1. Tested up to 4.3.1
+2. Text Domain slug has been added for Language Packs.
 
 = 7.6 =
 

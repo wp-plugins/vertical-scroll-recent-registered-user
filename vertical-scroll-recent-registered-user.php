@@ -6,10 +6,12 @@ Description: Vertical scroll recent registered user wordpress plugin create the 
 Author: Gopi Ramasamy
 Author URI: http://www.gopiplus.com/work/2010/07/18/vertical-scroll-recent-registered-user/
 Donate link: http://www.gopiplus.com/work/2010/07/18/vertical-scroll-recent-registered-user/
-Version: 7.6
+Version: 7.7
 Tags: Vertical, scroll, recent, registered, user
 License: GPLv2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
+Text Domain: vertical-scroll-recent-registered-user
+Domain Path: /languages
 */
 
 function vsrru() 
